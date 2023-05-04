@@ -1,5 +1,6 @@
 // Import stylesheets
 import './style.css';
+import { Timer } from './timer';
 
 console.log('Olá mundo');
 
@@ -55,4 +56,14 @@ document.getElementById('btn_ale').addEventListener('click', () => {
     cel1.innerHTML = `${i} =`;
     cel2.innerHTML = Math.trunc(Math.random() * numero);
   }
+});
+
+let temporizador = new Timer(document.getElementById('resultado_temp'));
+
+document.getElementById('btn_temp_start').addEventListener('click', () => {
+  temporizador.start();
+});
+
+document.getElementById('btn_temp_stop').addEventListener('click', () => {
+  temporizador.stop();
 });
