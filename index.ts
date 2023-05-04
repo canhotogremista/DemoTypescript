@@ -64,6 +64,10 @@ document.getElementById('btn_temp_start').addEventListener('click', () => {
   temporizador.start();
 });
 
+document.getElementById('btn_temp_cont').addEventListener('click', () => {
+  temporizador.continue();
+});
+
 document.getElementById('btn_temp_stop').addEventListener('click', () => {
   temporizador.stop();
 });
